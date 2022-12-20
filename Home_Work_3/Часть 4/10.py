@@ -1,10 +1,10 @@
 import json
 
-# data = {
-# 	'testlog':'testpas'
-# }
-# with open ('log.json', 'w') as f:
-# 	json.dump(data,f)
+data = {
+	'testlog':'testpas'
+}
+with open ('log.json', 'w') as f:
+	json.dump(data,f)
 
 # secret = 'GG не будет'
 # with open ('secret.json', 'w', encoding = 'utf-8') as f:
@@ -29,7 +29,7 @@ while True:
 		password = input("Введите пароль: ")
 		with open ('log.json', 'r') as f:
 			data = json.load(f)
-		if data[login] == password:
+		if login in data.keys() and data[login] == password:
 			print ("Успешный вход")
 			with open ('secret.json', 'r') as f:
 				secret = json.load(f)
