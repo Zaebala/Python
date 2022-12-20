@@ -1,14 +1,14 @@
 import json
 
-data = {
-	'testlog':'testpas'
-}
-with open ('log.json', 'w') as f:
-	json.dump(data,f)
+# data = {
+# 	'testlog':'testpas'
+# }
+# with open ('log.json', 'w') as f:
+# 	json.dump(data,f)
 
-secret = 'GG не будет'
-with open ('secret.json', 'w', encoding = 'utf-8') as f:
-	json.dump(secret,f)
+# secret = 'GG не будет'
+# with open ('secret.json', 'w', encoding = 'utf-8') as f:
+# 	json.dump(secret,f)
 
 while True:	
 	def reg():
