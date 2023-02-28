@@ -1,0 +1,23 @@
+{% extends 'index.html' %}
+
+{% block body %}
+<form method="POST" action="{{url_for('search')}}">
+    <select name="name" class="form-select" aria-label="Default select example">
+        <option selected>0</option>
+        <option value="Облегающее трикотажное платье">Облегающее трикотажное платье</option>
+        <option value="Платье-кардиган с поясом">Платье-кардиган с поясом</option>
+    </select>
+
+    <select name="size" class="form-select" aria-label="Default select example">
+        <option selected>0</option>
+        <option value="XS">XS</option>
+        <option value="S">S</option>
+        <option value="M">M</option>
+        <option value="L">L</option>
+        <option value="XL">XL</option>
+        <option value="XXL">XXL</option>
+    </select>
+    <a href="/search"><button type="submit">Поиск</button></a>
+    <input name ="gender" value="GuessFemale" type="hidden">
+</form>
+{% endblock %}
